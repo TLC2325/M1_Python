@@ -10,15 +10,12 @@
 
 import time
 
-# # Convert the inputs into lists
-# time_1 = time_1.split(":")
-# time_2 = time_2.split(":")
 
-# #wait for 1 second
+# #wait
 # time.sleep(1)
 
 option = int(input("""
-Time Calculator
+------------Time Calculator------------
 [1] Add 2 times
 [2] Find the difference between 2 times
 [3] Convert to Hours
@@ -27,6 +24,7 @@ Time Calculator
 [6] Convert Hours to Time
 [7] Convert Days to Time
 [8] Exit 
+----------------------------------------
 Select menu option: """))
 
 menu = [1, 2, 3, 4, 5, 6, 7, 8]
@@ -41,9 +39,12 @@ while (option in menu):
         print("Enter time in format DD:HH:MM (Days, Hours and Minutes)")
         time_1 = input("Enter time 1: ")
         time_2 = input("Enter time 2: ")
+        # Convert the inputs into lists
+        time_1 = time_1.split(":")
+        time_2 = time_2.split(":")
+        time.sleep(1)
         c = time_1 + time_2
-        print(c)
-
+        print("Answer:",c)
         time.sleep(1)
 
         option = int(input("""
@@ -69,5 +70,4 @@ Select menu option: """))
     elif (option == 6):
         print("------6-----")
         break
-print("Goodbye")
-
+print("Exiting from loop.")
