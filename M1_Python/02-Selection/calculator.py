@@ -42,6 +42,6 @@ elif (input_3 == "*"):
 elif (input_3 == "/"):
     print(firstNumber,"/",secondNumber,"=",(firstNumber / secondNumber))
 elif (input_3 == "s"):
-    print(firstNumber,"squared","=",(firstNumber * firstNumber))
+    print(firstNumber,"squared","=",(firstNumber ** secondNumber))
 else:
     "Calculation error, try again."
